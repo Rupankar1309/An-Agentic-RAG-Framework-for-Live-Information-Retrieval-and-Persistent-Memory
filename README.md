@@ -20,6 +20,27 @@ This project adds a **decision step** in front of retrieval. A router picks one 
 
 A small local model is less reliable than a hosted one at following a strict output format, so a large part of the work is **measuring how often the router fails and what to do when it does**.
 
+## Architecture
+
+```mermaid
+flowchart LR
+    Q["User query"] --> R["Agent router<br/>Qwen3 4B + fallback"]
+    R --> W["Live web search<br/>(next phase)"]
+    R --> M["Persistent memory<br/>(prototype)"]
+    R --> D["Document knowledge base<br/>ChromaDB + reranker"]
+    W --> G["Generate answer<br/>(next phase)"]
+    M --> G
+    D --> G
+    G --> A["Answer to user"]
+    classDef done fill:#0E9AA7,stroke:#0B7480,color:#ffffff;
+    classDef proto fill:#F2A93B,stroke:#D98E1F,color:#12263F;
+    classDef plan fill:#ffffff,stroke:#7A8CA8,stroke-dasharray: 5 5,color:#12263F;
+    class R,D done;
+    class M proto;
+    class W,G plan;
+```
+
+Teal = built and evaluated, amber = prototype, dashed = next phase.
 ---
 
 | Experiment | Result |
@@ -54,27 +75,7 @@ A small local model is less reliable than a hosted one at following a strict out
     └── 07_cap_theorem.md
 ---
 
-## Architecture
 
-```mermaid
-flowchart LR
-    Q["User query"] --> R["Agent router<br/>Qwen3 4B + fallback"]
-    R --> W["Live web search<br/>(next phase)"]
-    R --> M["Persistent memory<br/>(prototype)"]
-    R --> D["Document knowledge base<br/>ChromaDB + reranker"]
-    W --> G["Generate answer<br/>(next phase)"]
-    M --> G
-    D --> G
-    G --> A["Answer to user"]
-    classDef done fill:#0E9AA7,stroke:#0B7480,color:#ffffff;
-    classDef proto fill:#F2A93B,stroke:#D98E1F,color:#12263F;
-    classDef plan fill:#ffffff,stroke:#7A8CA8,stroke-dasharray: 5 5,color:#12263F;
-    class R,D done;
-    class M proto;
-    class W,G plan;
-```
-
-Teal = built and evaluated, amber = prototype, dashed = next phase.
 ```
 
 Files created when you run the scripts (all in the working directory):
