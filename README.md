@@ -25,10 +25,10 @@ A small local model is less reliable than a hosted one at following a strict out
 ```mermaid
 flowchart LR
     Q["User query"] --> R["Agent router<br/>Qwen3 4B + fallback"]
-    R --> W["Live web search<br/>(next phase)"]
-    R --> M["Persistent memory<br/>(prototype)"]
+    R --> W["Live web search"]
+    R --> M["Persistent memory"]
     R --> D["Document knowledge base<br/>ChromaDB + reranker"]
-    W --> G["Generate answer<br/>(next phase)"]
+    W --> G["Generate answer"]
     M --> G
     D --> G
     G --> A["Answer to user"]
@@ -37,10 +37,8 @@ flowchart LR
     classDef plan fill:#ffffff,stroke:#7A8CA8,stroke-dasharray: 5 5,color:#12263F;
     class R,D done;
     class M proto;
-    class W,G plan;
+    class W,G done;
 ```
-
-Teal = built and evaluated, amber = prototype, dashed = next phase.
 ---
 
 | Experiment | Result |
