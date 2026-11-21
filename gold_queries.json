@@ -1,0 +1,129 @@
+[
+  {
+    "query": "Why can't vector databases just use exact nearest neighbor search at large scale?",
+    "relevant_chunk_ids": [
+      "chunk_0000"
+    ]
+  },
+  {
+    "query": "How does the IVF indexing method partition data for faster search?",
+    "relevant_chunk_ids": [
+      "chunk_0001"
+    ]
+  },
+  {
+    "query": "In retrieval-augmented generation, what role does a vector database play?",
+    "relevant_chunk_ids": [
+      "chunk_0002"
+    ]
+  },
+  {
+    "query": "How is the attention score between two tokens calculated in self-attention?",
+    "relevant_chunk_ids": [
+      "chunk_0003"
+    ]
+  },
+  {
+    "query": "Why do transformers need positional encoding if they use self-attention?",
+    "relevant_chunk_ids": [
+      "chunk_0004"
+    ]
+  },
+  {
+    "query": "What's the difference between how BERT and GPT use the transformer architecture?",
+    "relevant_chunk_ids": [
+      "chunk_0005"
+    ]
+  },
+  {
+    "query": "What is the main difference between batch gradient descent and stochastic gradient descent?",
+    "relevant_chunk_ids": [
+      "chunk_0006"
+    ]
+  },
+  {
+    "query": "What happens if the learning rate in gradient descent is set too high?",
+    "relevant_chunk_ids": [
+      "chunk_0007"
+    ]
+  },
+  {
+    "query": "How does the Adam optimizer combine momentum with adaptive learning rates?",
+    "relevant_chunk_ids": [
+      "chunk_0008"
+    ]
+  },
+  {
+    "query": "What does it mean for a model to overfit its training data?",
+    "relevant_chunk_ids": [
+      "chunk_0009"
+    ]
+  },
+  {
+    "query": "What is the dropout rate typically set to in neural network training?",
+    "relevant_chunk_ids": [
+      "chunk_0010"
+    ]
+  },
+  {
+    "query": "How does early stopping help prevent overfitting during training?",
+    "relevant_chunk_ids": [
+      "chunk_0010",
+      "chunk_0011"
+    ]
+  },
+  {
+    "query": "What does REST stand for and what does it organize an API around?",
+    "relevant_chunk_ids": [
+      "chunk_0012"
+    ]
+  },
+  {
+    "query": "Why does statelessness make RESTful services easier to scale horizontally?",
+    "relevant_chunk_ids": [
+      "chunk_0013"
+    ]
+  },
+  {
+    "query": "What does an HTTP 404 status code indicate?",
+    "relevant_chunk_ids": [
+      "chunk_0014"
+    ]
+  },
+  {
+    "query": "What ordering property must every node in a binary search tree satisfy?",
+    "relevant_chunk_ids": [
+      "chunk_0015"
+    ]
+  },
+  {
+    "query": "What happens to a binary search tree if sorted data is inserted into it naively?",
+    "relevant_chunk_ids": [
+      "chunk_0016"
+    ]
+  },
+  {
+    "query": "What does an in-order traversal of a binary search tree produce?",
+    "relevant_chunk_ids": [
+      "chunk_0017"
+    ]
+  },
+  {
+    "query": "According to the CAP theorem, how many of the three guarantees can a distributed system provide at once?",
+    "relevant_chunk_ids": [
+      "chunk_0018"
+    ]
+  },
+  {
+    "query": "What's the difference between a CP system and an AP system in distributed databases?",
+    "relevant_chunk_ids": [
+      "chunk_0019"
+    ]
+  },
+  {
+    "query": "Which type of system, CP or AP, would Cassandra typically be considered an example of?",
+    "relevant_chunk_ids": [
+      "chunk_0020"
+    ]
+  }
+]
