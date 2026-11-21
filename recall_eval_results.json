@@ -1,0 +1,471 @@
+{
+  "total_queries": 21,
+  "k": 5,
+  "baseline_recall_at_k_pct": 100.0,
+  "reranked_recall_at_k_pct": 100.0,
+  "results": [
+    {
+      "query": "Why can't vector databases just use exact nearest neighbor search at large scale?",
+      "relevant_chunk_ids": [
+        "chunk_0000"
+      ],
+      "baseline_top_k": [
+        "chunk_0000",
+        "chunk_0001",
+        "chunk_0002",
+        "chunk_0015",
+        "chunk_0016"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0000",
+        "chunk_0001",
+        "chunk_0002",
+        "chunk_0020",
+        "chunk_0015"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "How does the IVF indexing method partition data for faster search?",
+      "relevant_chunk_ids": [
+        "chunk_0001"
+      ],
+      "baseline_top_k": [
+        "chunk_0001",
+        "chunk_0015",
+        "chunk_0000",
+        "chunk_0016",
+        "chunk_0002"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0001",
+        "chunk_0000",
+        "chunk_0015",
+        "chunk_0006",
+        "chunk_0017"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "In retrieval-augmented generation, what role does a vector database play?",
+      "relevant_chunk_ids": [
+        "chunk_0002"
+      ],
+      "baseline_top_k": [
+        "chunk_0002",
+        "chunk_0000",
+        "chunk_0001",
+        "chunk_0003",
+        "chunk_0004"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0002",
+        "chunk_0000",
+        "chunk_0001",
+        "chunk_0014",
+        "chunk_0003"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "How is the attention score between two tokens calculated in self-attention?",
+      "relevant_chunk_ids": [
+        "chunk_0003"
+      ],
+      "baseline_top_k": [
+        "chunk_0003",
+        "chunk_0004",
+        "chunk_0005",
+        "chunk_0008",
+        "chunk_0015"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0003",
+        "chunk_0004",
+        "chunk_0005",
+        "chunk_0007",
+        "chunk_0016"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "Why do transformers need positional encoding if they use self-attention?",
+      "relevant_chunk_ids": [
+        "chunk_0004"
+      ],
+      "baseline_top_k": [
+        "chunk_0004",
+        "chunk_0003",
+        "chunk_0005",
+        "chunk_0012",
+        "chunk_0011"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0004",
+        "chunk_0003",
+        "chunk_0005",
+        "chunk_0016",
+        "chunk_0009"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What's the difference between how BERT and GPT use the transformer architecture?",
+      "relevant_chunk_ids": [
+        "chunk_0005"
+      ],
+      "baseline_top_k": [
+        "chunk_0005",
+        "chunk_0004",
+        "chunk_0003",
+        "chunk_0006",
+        "chunk_0009"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0005",
+        "chunk_0004",
+        "chunk_0003",
+        "chunk_0015",
+        "chunk_0013"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What is the main difference between batch gradient descent and stochastic gradient descent?",
+      "relevant_chunk_ids": [
+        "chunk_0006"
+      ],
+      "baseline_top_k": [
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0008",
+        "chunk_0010",
+        "chunk_0009"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0008",
+        "chunk_0010",
+        "chunk_0000"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What happens if the learning rate in gradient descent is set too high?",
+      "relevant_chunk_ids": [
+        "chunk_0007"
+      ],
+      "baseline_top_k": [
+        "chunk_0007",
+        "chunk_0006",
+        "chunk_0008",
+        "chunk_0009",
+        "chunk_0010"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0007",
+        "chunk_0008",
+        "chunk_0006",
+        "chunk_0009",
+        "chunk_0010"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "How does the Adam optimizer combine momentum with adaptive learning rates?",
+      "relevant_chunk_ids": [
+        "chunk_0008"
+      ],
+      "baseline_top_k": [
+        "chunk_0008",
+        "chunk_0007",
+        "chunk_0003",
+        "chunk_0011",
+        "chunk_0004"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0008",
+        "chunk_0007",
+        "chunk_0000",
+        "chunk_0004",
+        "chunk_0009"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What does it mean for a model to overfit its training data?",
+      "relevant_chunk_ids": [
+        "chunk_0009"
+      ],
+      "baseline_top_k": [
+        "chunk_0009",
+        "chunk_0011",
+        "chunk_0010",
+        "chunk_0007",
+        "chunk_0006"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0009",
+        "chunk_0011",
+        "chunk_0006",
+        "chunk_0007",
+        "chunk_0000"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What is the dropout rate typically set to in neural network training?",
+      "relevant_chunk_ids": [
+        "chunk_0010"
+      ],
+      "baseline_top_k": [
+        "chunk_0010",
+        "chunk_0007",
+        "chunk_0008",
+        "chunk_0011",
+        "chunk_0006"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0010",
+        "chunk_0007",
+        "chunk_0011",
+        "chunk_0008",
+        "chunk_0009"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "How does early stopping help prevent overfitting during training?",
+      "relevant_chunk_ids": [
+        "chunk_0011",
+        "chunk_0010"
+      ],
+      "baseline_top_k": [
+        "chunk_0011",
+        "chunk_0010",
+        "chunk_0009",
+        "chunk_0007",
+        "chunk_0008"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0011",
+        "chunk_0010",
+        "chunk_0009",
+        "chunk_0008",
+        "chunk_0007"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What does REST stand for and what does it organize an API around?",
+      "relevant_chunk_ids": [
+        "chunk_0012"
+      ],
+      "baseline_top_k": [
+        "chunk_0012",
+        "chunk_0013",
+        "chunk_0014",
+        "chunk_0019",
+        "chunk_0004"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0012",
+        "chunk_0014",
+        "chunk_0013",
+        "chunk_0015",
+        "chunk_0000"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "Why does statelessness make RESTful services easier to scale horizontally?",
+      "relevant_chunk_ids": [
+        "chunk_0013"
+      ],
+      "baseline_top_k": [
+        "chunk_0013",
+        "chunk_0012",
+        "chunk_0019",
+        "chunk_0020",
+        "chunk_0014"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0013",
+        "chunk_0012",
+        "chunk_0014",
+        "chunk_0008",
+        "chunk_0010"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What does an HTTP 404 status code indicate?",
+      "relevant_chunk_ids": [
+        "chunk_0014"
+      ],
+      "baseline_top_k": [
+        "chunk_0014",
+        "chunk_0013",
+        "chunk_0012",
+        "chunk_0019",
+        "chunk_0018"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0014",
+        "chunk_0012",
+        "chunk_0013",
+        "chunk_0015",
+        "chunk_0018"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What ordering property must every node in a binary search tree satisfy?",
+      "relevant_chunk_ids": [
+        "chunk_0015"
+      ],
+      "baseline_top_k": [
+        "chunk_0015",
+        "chunk_0017",
+        "chunk_0016",
+        "chunk_0000",
+        "chunk_0020"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0015",
+        "chunk_0017",
+        "chunk_0016",
+        "chunk_0018",
+        "chunk_0001"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What happens to a binary search tree if sorted data is inserted into it naively?",
+      "relevant_chunk_ids": [
+        "chunk_0016"
+      ],
+      "baseline_top_k": [
+        "chunk_0016",
+        "chunk_0015",
+        "chunk_0017",
+        "chunk_0000",
+        "chunk_0001"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0016",
+        "chunk_0017",
+        "chunk_0015",
+        "chunk_0000",
+        "chunk_0001"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What does an in-order traversal of a binary search tree produce?",
+      "relevant_chunk_ids": [
+        "chunk_0017"
+      ],
+      "baseline_top_k": [
+        "chunk_0015",
+        "chunk_0017",
+        "chunk_0016",
+        "chunk_0000",
+        "chunk_0001"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0017",
+        "chunk_0015",
+        "chunk_0016",
+        "chunk_0000",
+        "chunk_0001"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "According to the CAP theorem, how many of the three guarantees can a distributed system provide at once?",
+      "relevant_chunk_ids": [
+        "chunk_0018"
+      ],
+      "baseline_top_k": [
+        "chunk_0018",
+        "chunk_0020",
+        "chunk_0019",
+        "chunk_0013",
+        "chunk_0012"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0018",
+        "chunk_0019",
+        "chunk_0020",
+        "chunk_0002",
+        "chunk_0013"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "What's the difference between a CP system and an AP system in distributed databases?",
+      "relevant_chunk_ids": [
+        "chunk_0019"
+      ],
+      "baseline_top_k": [
+        "chunk_0019",
+        "chunk_0020",
+        "chunk_0018",
+        "chunk_0012",
+        "chunk_0015"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0020",
+        "chunk_0019",
+        "chunk_0002",
+        "chunk_0018",
+        "chunk_0000"
+      ],
+      "reranked_hit": true
+    },
+    {
+      "query": "Which type of system, CP or AP, would Cassandra typically be considered an example of?",
+      "relevant_chunk_ids": [
+        "chunk_0020"
+      ],
+      "baseline_top_k": [
+        "chunk_0020",
+        "chunk_0019",
+        "chunk_0018",
+        "chunk_0015",
+        "chunk_0012"
+      ],
+      "baseline_hit": true,
+      "reranked_top_k": [
+        "chunk_0020",
+        "chunk_0019",
+        "chunk_0012",
+        "chunk_0009",
+        "chunk_0004"
+      ],
+      "reranked_hit": true
+    }
+  ]
+}

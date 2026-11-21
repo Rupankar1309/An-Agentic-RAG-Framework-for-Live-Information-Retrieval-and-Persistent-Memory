@@ -1,0 +1,21 @@
+chunk_0000	[01_vector_databases.md]	A vector database is a specialized data store built to hold high-dimensional numerical vectors, typically the embeddings produced by machine learning 
+chunk_0001	[01_vector_databases.md]	Two of the most common indexing strategies are HNSW, short for Hierarchical Navigable Small World graphs, and IVF, short for Inverted File Index. HNSW
+chunk_0002	[01_vector_databases.md]	to large datasets with high availability guarantees. FAISS, developed by Meta, is not a full database on its own but a highly optimized library for si
+chunk_0003	[02_attention_mechanism.md]	Self-attention is the mechanism that allows a model to weigh how much each word, or token, in a sequence should influence the representation of every 
+chunk_0004	[02_attention_mechanism.md]	own learned query, key, and value projections. Each of these parallel attention heads can learn to focus on a different kind of relationship between t
+chunk_0005	[02_attention_mechanism.md]	would have no way of distinguishing "the dog chased the cat" from "the cat chased the dog," since both sentences contain the same set of tokens. A ful
+chunk_0006	[03_gradient_descent.md]	Gradient descent is an optimization algorithm used to find the set of model parameters that minimizes a loss function. The core idea is simple: at the
+chunk_0007	[03_gradient_descent.md]	often abbreviated SGD, computes the gradient using just a single training example at a time, which makes updates much faster and introduces useful noi
+chunk_0008	[03_gradient_descent.md]	progress. Because of this sensitivity, many training setups use a learning rate schedule that starts with a larger rate and gradually decreases it ove
+chunk_0009	[04_regularization.md]	Overfitting occurs when a machine learning model learns patterns specific to its training data, including noise and idiosyncrasies that do not general
+chunk_0010	[04_regularization.md]	many weights all the way to exactly zero, effectively performing automatic feature selection. L2 regularization, also called weight decay, adds a pena
+chunk_0011	[04_regularization.md]	for the fact that more neurons are active than during training. Early stopping and data augmentation are two additional strategies for combating overf
+chunk_0012	[05_rest_apis.md]	REST, which stands for Representational State Transfer, is an architectural style for designing networked applications, most commonly used for web API
+chunk_0013	[05_rest_apis.md]	it multiple times may create multiple new resources. PUT is used to update an existing resource by replacing it entirely with the data provided in the
+chunk_0014	[05_rest_apis.md]	without needing access to session data stored elsewhere, and it also makes the system more resilient to individual server failures. HTTP status codes 
+chunk_0015	[06_binary_search_trees.md]	A binary search tree, or BST, is a node-based data structure in which every node has at most two children, conventionally called the left child and th
+chunk_0016	[06_binary_search_trees.md]	is complete. Insertion follows a nearly identical process, walking down the tree using the same comparisons until reaching a missing child position, w
+chunk_0017	[06_binary_search_trees.md]	problem by automatically performing rotations after insertions and deletions to keep the tree height close to logarithmic no matter what order element
+chunk_0018	[07_cap_theorem.md]	The CAP theorem states that a distributed data store can provide at most two of the following three guarantees at the same time: consistency, availabi
+chunk_0019	[07_cap_theorem.md]	and risk returning stale or inconsistent data, or to stay strictly consistent by refusing some requests until the partition is resolved. This tradeoff
+chunk_0020	[07_cap_theorem.md]	CAP theorem has practical implications for how distributed databases are designed and chosen. A database like traditional relational systems configure

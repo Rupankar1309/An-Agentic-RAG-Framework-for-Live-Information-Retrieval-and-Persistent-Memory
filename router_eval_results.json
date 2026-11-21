@@ -1,0 +1,401 @@
+{
+  "timestamp": "2026-09-07T04:21:22.800047",
+  "model": "qwen3:4b",
+  "primary": {
+    "total_queries": 24,
+    "parse_failures": 0,
+    "parse_failure_rate_pct": 0.0,
+    "fallback_recovery_rate_pct": null,
+    "llm_only_accuracy_pct": 100.0,
+    "overall_accuracy_pct": 100.0,
+    "results": [
+      {
+        "query": "What is the time complexity of binary search?",
+        "expected": "direct_answer",
+        "raw_llm_output": "We are given a user query: \"What is the time complexity of binary search?\"\n\nWe need to decide which tool to route this query to.\n\nLet's break down:\n\n- \"web_search\": for current, real-time, or frequently changing information. Time complexity of binary search is a standard theoretical concept in computer science. It is not something that changes frequently or requires real-time data. So we don't need web search.\n\n- \"doc_search\": for the user's own uploaded documents/notes. The user hasn't provided any documents in this context. Also, the question is about a fundamental concept that is well-known in the field. So we don't need to search the user's documents.\n\n- \"direct_answer\": the query can be answered from general knowledge. The time complexity of binary search is O(log n) for a sorted array. This is a standard result that is part of general knowledge in computer science.\n\nTherefore, we can answer this directly without any retrieval.\n\nSo the route should be \"direct_answer\".\n\nWe must output only a JSON object in the specified format.\n\nResponse: {\"route\": \"direct_answer\"}\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      },
+      {
+        "query": "Explain the difference between a list and a tuple in Python.",
+        "expected": "direct_answer",
+        "raw_llm_output": "Okay, let's see. The user wants to know the difference between a list and a tuple in Python.\n\nFirst, I need to figure out which tool to use here. The options are web_search, doc_search, or direct_answer.\n\nHmm, the question is about Python basics. Lists and tuples are fundamental data structures in Python. I remember that lists are mutable, while tuples are immutable. Also, tuples are faster for read operations and are used when you don't want the data to change.\n\nBut does the user need real-time info? Maybe not. Since this is a common programming concept taught in Python tutorials, it's probably something that's part of general knowledge. Like, if someone's learning Python, they'd have this information in their textbooks or standard docs.\n\nWait, the tools: doc_search is for the user's own uploaded documents. But the user didn't mention any documents here. They just asked a general question. So doc_search isn't applicable here.\n\nWeb_search would be for current, real-time info. But this is a standard Python feature that hasn't changed recently. The difference between lists and tuples is a core concept that's well-documented. So maybe the answer can be given directly without searching the web.\n\nDirect_answer is for when the query can be answered from general knowledge. Since I know the answer, I don't need to search the web or the user's documents. So the route should be direct_answer.\n\nWait, but let me double-check. If the question is about Python, and the answer is standard, then yes. For example, in Python, tuples are immutable and lists are mutable. Also, tuples use parentheses, lists use square brackets. Tuples are faster for iteration. So the answer is known.\n\nTherefore, the correct route is direct_answer.\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      },
+      {
+        "query": "What is 17 multiplied by 23?",
+        "expected": "direct_answer",
+        "raw_llm_output": "Okay, let's see. The user is asking what 17 multiplied by 23 is. Hmm. I need to figure out which tool to use here.\n\nFirst, I should check if this is something that requires current real-time data. Like, if it's a current event or something that changes often. But multiplication is a basic math problem. The answer should be a fixed number. So maybe web_search isn't needed here.\n\nThen, the doc_search is for the user's own uploaded documents. But the user didn't mention any documents here. They just want the multiplication result. So probably not doc_search.\n\nDirect answer is for queries that can be answered from general knowledge without retrieval. Since multiplying 17 and 23 is a straightforward calculation, I can do that in my head or know the answer. Wait, 17 times 23... Let me calculate quickly. 17*20 is 340, and 17*3 is 51, so 340+51=391. So the answer is 391. Since this is a simple math problem that I can compute directly without needing any external data, the correct route here is direct_answer.\n\nSo the tool to use is direct_answer.\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      },
+      {
+        "query": "Summarize the CAP theorem in one paragraph.",
+        "expected": "direct_answer",
+        "raw_llm_output": "Okay, let's see. The user wants me to summarize the CAP theorem in one paragraph. Hmm, first I need to figure out which tool to route this query to.\n\nThe CAP theorem is a concept in distributed systems, right? It states that in a distributed system, you can't have all three of Consistency (C), Availability (A), and Partition tolerance (P) at the same time. You have to sacrifice one for the others. But does this require real-time data from the web? Or is it something that's part of general knowledge?\n\nWait, the user is asking for a summary of the CAP theorem. Since the CAP theorem is a well-established concept in computer science, especially in distributed systems, this information is part of general knowledge that I can recall without needing to search the web or look at the user's documents. So I don't need to do a web search here because it's a standard theory that's not time-sensitive or frequently changing. The user's own documents probably don't have this info either unless they uploaded some notes about it, but the query is general.\n\nSo the answer should be \"direct_answer\" because it's a general knowledge question. Let me double-check. If someone asks about the CAP theorem, it's a fundamental concept taught in CS courses, so no need for external search. Yeah, that's right. So the route is direct_answer.\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      },
+      {
+        "query": "What does REST stand for?",
+        "expected": "direct_answer",
+        "raw_llm_output": "Okay, let's see. The user is asking what REST stands for. I need to figure out which tool to route this query to.\n\nFirst, REST is an acronym that stands for Representational State Transfer. But wait, is that something I know from general knowledge? Yeah, I think REST is a web architecture style, and the full form is well-known in the tech industry. So maybe this doesn't require a web search or document search.\n\nThe options are web_search, doc_search, or direct_answer. Since the user is asking for the definition of REST, which is a standard term in computer science, I can answer this without needing to retrieve real-time data or the user's documents. The answer is well-known and doesn't change frequently. So it's a direct answer.\n\nWait, but sometimes acronyms can be tricky. Let me double-check. REST does stand for Representational State Transfer. Yes, that's correct. So the answer is known without needing to search the web or the user's documents. Therefore, the route should be direct_answer.\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      },
+      {
+        "query": "Explain backpropagation in neural networks in simple terms.",
+        "expected": "direct_answer",
+        "raw_llm_output": "Okay, let's see. The user wants me to explain backpropagation in neural networks in simple terms.\n\nFirst, I need to figure out which tool to route this query to. The options are web_search, doc_search, or direct_answer.\n\nBackpropagation is a concept in neural networks. I remember it's a method used to train neural networks by adjusting the weights based on the error. But does the user need current real-time info? Well, backpropagation is a fundamental concept that's been around for a while, so maybe the information is stable.\n\nWait, the user is asking for a simple explanation. Since this is a standard topic in machine learning that's covered in general knowledge, I don't think they need to look up current web information or their own documents. The answer can be given from general knowledge without needing to retrieve documents or do a web search.\n\nSo, the route should be direct_answer. Let me check the definitions again.\n\nWeb_search is for current, real-time, or frequently changing info. Backpropagation isn't something that changes often; it's a well-established concept. Doc_search would be if the user has uploaded documents, but the query doesn't mention that. The user just wants a simple explanation, which is a standard topic.\n\nYes, direct_answer is the right choice here.\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      },
+      {
+        "query": "What is the difference between supervised and unsupervised learning?",
+        "expected": "direct_answer",
+        "raw_llm_output": "Okay, so I need to figure out which tool to route this user query to. The query is: \"What is the difference between supervised and unsupervised learning?\"\n\nFirst, let me recall the options: web_search, doc_search, or direct_answer.\n\nThe user is asking about a concept in machine learning. Supervised vs unsupervised learning. I remember that this is a standard topic in machine learning. From general knowledge, supervised learning uses labeled data where the model learns from input-output pairs, while unsupervised learning finds patterns in unlabeled data, like clustering.\n\nSince this is a fundamental concept that's covered in general knowledge, I don't think the user has uploaded any documents related to this. The question doesn't mention any specific documents or notes, so it's not doc_search.\n\nAlso, the information here is a standard definition that's part of general knowledge in AI/ML. So, the system doesn't need to search the web for real-time data or the user's own docs. Therefore, the answer should be direct_answer.\n\nWait, let me double-check. If the user had uploaded some ML notes, but the query here doesn't specify that. The problem states the user query is just that sentence. So it's a general knowledge question. Yeah, I think direct_answer is correct.\n\nSo the route should be \"direct_answer\".\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      },
+      {
+        "query": "Convert 100 Fahrenheit to Celsius.",
+        "expected": "direct_answer",
+        "raw_llm_output": "Okay, let's see. The user wants to convert 100 Fahrenheit to Celsius. Hmm, I need to figure out which tool to use here.\n\nFirst, I remember the formula for converting Fahrenheit to Celsius is (F - 32) * 5/9. So 100 Fahrenheit minus 32 is 68, multiplied by 5/9 gives approximately 37.78 Celsius.\n\nBut wait, the question is about which tool to route this query to. The options are web_search, doc_search, or direct_answer.\n\nWeb_search would be for current or real-time info. But this is a straightforward conversion that's a standard formula. Doc_search is for the user's own documents, but the user didn't upload any docs here. Direct_answer is for when the answer can be known without retrieval.\n\nSince the conversion formula is well-known and doesn't require external data or real-time info, I think it's a direct answer. So the route should be direct_answer.\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      },
+      {
+        "query": "What's the weather in Kolkata right now?",
+        "expected": "web_search",
+        "raw_llm_output": "Okay, let's see. The user is asking for the current weather in Kolkata. Hmm. I need to figure out which tool to route this query to.\n\nFirst, the options are web_search, doc_search, or direct_answer. \n\nDirect answer would be if I know the answer without any retrieval. But weather is usually real-time data, right? So I don't have that in my general knowledge. Like, I don't remember the current weather in Kolkata. So probably not direct_answer.\n\nDoc_search is for the user's own uploaded documents. The user didn't mention any documents here. They just asked about the weather. So unless they provided some docs with weather info, but the query doesn't indicate that. So doc_search probably isn't the right choice here.\n\nWeb_search is for current, real-time info. Weather data changes frequently, so the right tool here would be web_search to get the latest weather from a service like a weather API or website.\n\nSo the answer should be web_search.\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "What's the latest stable version of PyTorch?",
+        "expected": "web_search",
+        "raw_llm_output": "Okay, let's see. The user is asking for the latest stable version of PyTorch. I need to figure out which tool to route this query to.\n\nFirst, I'll consider the options: web_search, doc_search, or direct_answer.\n\nThe question is about the latest stable PyTorch version. PyTorch's version numbers are frequently updated, so the latest version might change over time. Since the user is asking for the current stable version, which could be something like 2.0.x or 1.13.x depending on when they ask, but the key here is that it's real-time info.\n\nDoc_search is for the user's own documents. The user didn't mention uploading any docs, so probably not doc_search.\n\nDirect_answer would be if I can answer from general knowledge. But I don't have real-time data. My training data might have an older version. For example, up to 2023, but the latest stable might have been updated after that. So I can't be sure. The correct approach here is to use web_search because the latest version is time-sensitive and needs current data.\n\nSo the answer should be web_search.\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "Who won the most recent India vs Australia cricket match?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"Who won the most recent India vs Australia cricket match?\"\n\nWe need to decide which tool to route this query to.\n\nLet's analyze:\n\n- The query asks for the \"most recent\" India vs Australia cricket match. \n- Cricket matches are dynamic and change frequently. The most recent match would be the latest one that has been played (if any) and it might be a current event.\n\nImportant: The user is asking for the most recent match. This implies that we need up-to-date information. Since cricket matches are played in real-time and the results are current, we cannot rely on static documents (like the user's own uploaded documents) because the user hasn't uploaded any documents about cricket matches. Also, general knowledge (direct_answer) might not be sufficient because the most recent match might have happened very recently and the assistant's knowledge cutoff is not current.\n\nTherefore, we should use:\n\n- \"web_search\": because the query requires current, real-time information (the most recent match result).\n\nWhy not \"doc_search\"? The user has not provided any documents to search. The query is about a real-time event, not about the user's own documents.\n\nWhy not \"direct_answer\"? The assistant does not have real-time knowledge of the most recent match (as of the knowledge cutoff in the system, which is not current). So we cannot answer without searching.\n\nThus, the route is \"web_search\".\n\nResponse must be a JSON object in exactly the format: {\"route\": \"web_search\"}\n\nNote: The instruction says: \"Respond with ONLY a JSON object in exactly this format, and nothing else\"\n\nSo we write: {\"route\": \"web\": \"web_search\"} -> but wait, the string is \"web_search\", so:\n\n{\"route\": \"web_search\"}\n\nBut note: the instruction says the value must be one of: \"web_search\", \"doc_search\", \"direct_answer\"\n\nLet me write it correctly.\n\nFinal response: {\"",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "What's the current price of Bitcoin in INR?",
+        "expected": "web_search",
+        "raw_llm_output": "Okay, let's see. The user is asking for the current price of Bitcoin in INR. Hmm, I need to figure out which tool to route this to.\n\nFirst, Bitcoin's price can change a lot in real-time, right? So the current price would require up-to-date information. The web_search tool is for queries that need current, real-time, or frequently changing info. Since Bitcoin prices fluctuate, I think web_search is the right choice here.\n\nDoc_search is for the user's own documents, but the user didn't mention any documents. They just want the current price. Direct_answer is for general knowledge without retrieval. But the price isn't something I know offhand; it's dynamic. So direct_answer isn't appropriate here.\n\nTherefore, the answer should be web_search.\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "What's the latest news on AI regulation in India?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"What's the latest news on AI regulation in India?\"\n\nWe need to decide which tool to route to:\n\n- \"web_search\": for current, real-time, or frequently changing information\n- \"doc_search\": for the user's own uploaded documents/notes\n- \"direct_answer\": if the query can be answered from general knowledge\n\nThe query asks for \"the latest news on AI regulation in India\". \n\nThis is asking for recent news, which is time-sensitive and current. Therefore, we need real-time information. \n\nWe do not have any indication that the user has uploaded documents about AI regulation in India (so doc_search is not appropriate). \n\nAlso, the answer is not something that can be known from general knowledge without current information (because the latest news changes frequently). \n\nTherefore, we should route to \"web_search\".\n\nResponse must be a JSON object in exactly the format: {\"route\": \"web_search\"}\n\nNote: The instruction says \"Respond with ONLY a JSON object in exactly this format, and nothing else\"\n\nSo we output:\n{\"route\": \"web:web_search\"} -> Wait, no, the value should be one of the strings: \"web_search\", \"doc_search\", \"direct_answer\"\n\nLet me write it as: {\"route\": \"web_search\"}\n\nBut note: the problem says: \"web_search\", \"doc_search\", \"direct_answer\" (without the colon in the string)\n\nSo the JSON is: {\"route\": \"web_search\"}\n\nHowever, the instruction says: \"no_think\" meaning we don't do any thinking beyond the routing. But we just did the thinking.\n\nWe output only the JSON.\n\nLet me check: the user query is about the latest news -> real-time -> web_search.\n\nYes.\n\nSo the response is: {\"route\": \"web_search\"}\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "When is the next major SpaceX launch scheduled?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"When is the next major SpaceX launch scheduled?\"\n\nWe need to decide which tool to route this query to.\n\nLet's break down:\n\n- The query is about the next major SpaceX launch. This information is time-sensitive and changes frequently (launch schedules are updated regularly, sometimes with last-minute changes).\n- The \"web_search\" tool is for queries that need current, real-time, or frequently changing information.\n- The \"doc_search\" tool is for queries about the user's own uploaded documents/notes (which we don't have in this context).\n- The \"direct_answer\" tool is for queries that can be answered from general knowledge without retrieval.\n\nCan we answer this with general knowledge? \n  - As an AI, I don't have real-time knowledge of the next SpaceX launch. I might have some historical data but not the current schedule. \n  - SpaceX launch schedules are not part of general knowledge that is always up-to-date. They are dynamic and require current data.\n\nTherefore, we need to use web_search to get the latest information.\n\nAlso, note: the user did not provide any uploaded documents, so doc_search is not applicable.\n\nThus, the route should be \"web_search\".\n\nResponse must be a JSON object exactly in the format: {\"route\": \"web_search\"}\n\nWe output only the JSON, no extra text.\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "What is the current repo rate set by the RBI?",
+        "expected": "web_search",
+        "raw_llm_output": "Okay, let's see. The user is asking about the current repo rate set by the RBI. Hmm, the RBI is the Reserve Bank of India, right? So they need to know the latest repo rate.\n\nFirst, I should figure out what the repo rate is. The repo rate is the interest rate at which the RBI lends money to banks. It's a key monetary policy tool. Now, the question is about the current rate. Since this is a real-time figure, it's probably changing frequently. The user wants the most up-to-date information.\n\nThe tools available are web_search, doc_search, or direct_answer. Let me think. If the user is asking for the current repo rate, which is a real-time figure that's updated daily by the RBI, then the answer isn't in the user's uploaded documents (doc_search) unless they have specific notes about RBI rates. But the user didn't mention any documents, so probably not doc_search. \n\nDirect_answer would be for general knowledge, but the repo rate changes frequently, so the latest rate isn't something that's part of general knowledge that's fixed. For example, if someone asks \"What is the capital of France?\" that's direct_answer, but the repo rate changes, so you need the latest data. \n\nSo, the correct tool here is web_search. Because the current repo rate is a real-time piece of information that's updated by the RBI's announcements. The user needs to get the latest rate from the internet, like checking the RBI's official website or financial news sites. \n\nWait, but maybe the user's own documents have this info? The problem says \"the user's own uploaded documents/notes\". But the user hasn't provided any documents here, so in this context, it's safe to assume that the answer requires web search. \n\nSo the route should be web_search.\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "What are today's top trending topics on GitHub?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"What are today's top trending topics on GitHub?\"\n\nWe need to decide which tool to route this query to.\n\nLet's break down:\n\n- \"web_search\": for current, real-time, or frequently changing information. GitHub trends are real-time and change frequently (e.g., daily). We would need to get the latest trending topics from GitHub's current data.\n\n- \"doc_search\": for the user's own uploaded documents/notes. The query doesn't mention any specific documents the user has uploaded, so we don't have context for that.\n\n- \"direct_answer\": if the query can be answered from general knowledge without retrieval. But note: GitHub's trending topics are not static and change daily. General knowledge doesn't include the current trends (as of today). So we cannot answer this with direct knowledge.\n\nTherefore, we need to use \"web_search\" to get the current trending topics on GitHub.\n\nImportant: The query asks for \"today's\", meaning the current day. So it's real-time.\n\nHence, the route is \"web_search\".\n\nWe output exactly: {\"route\": \"web_search\"}\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "Summarize chapter 2 of my uploaded notes.",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let me figure out what the user needs here. They want me to summarize chapter 2 of their uploaded notes. The options are web_search, doc_search, or direct_answer.\n\nFirst, I need to check which tool applies. The user mentioned \"my uploaded notes,\" so that means they have documents they've uploaded before. The doc_search tool is for queries about the user's own documents. Since they're asking for a specific chapter from their uploaded notes, it's definitely about their own documents. \n\nWeb_search is for real-time or frequently changing info, but here they want a summary of their notes, which are static. Direct_answer is for general knowledge without retrieval. But the user is asking about their uploaded notes, so I need to retrieve from those documents. Therefore, doc_search is the right choice here.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "What did my research paper say about the evaluation methodology?",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let's see. The user is asking, \"What did my research paper say about the evaluation methodology?\" Hmm. So they want to know what their own research paper stated regarding the evaluation methodology.\n\nFirst, I need to figure out which tool to route this query to. The options are web_search, doc_search, or direct_answer.\n\nThe key here is that the user mentions \"my research paper\". That implies they have uploaded their own documents or notes where this paper is stored. Since the system is an agentic RAG setup, the doc_search tool is for queries about the user's own uploaded documents. \n\nThe web_search would be for current, real-time info, but the user is asking about their specific research paper, which they've presumably uploaded. So it's not something that's publicly available or needs live data. \n\nDirect_answer is for general knowledge without retrieval. But here, the answer depends on the user's own documents, so we can't answer directly from general knowledge. \n\nTherefore, the correct route here is doc_search because the query is about their uploaded research paper.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "According to my thesis draft, what are the main contributions?",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let's see. The user is asking about their thesis draft's main contributions. They mentioned \"According to my thesis draft\", so they're referring to their own uploaded documents or notes.\n\nThe tools available are web_search, doc_search, and direct_answer. Web_search is for current, real-time info, but the user is talking about their own thesis draft, which they've probably uploaded. Doc_search is for the user's own documents, so that's likely the right tool here. Direct_answer is for general knowledge without retrieval. Since the user is asking about their specific thesis draft, which they've uploaded, the system should use doc_search to retrieve that information. They don't need web search because it's not current data, and it's not general knowledge. So the answer should be doc_search.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "What topics are covered in my machine learning course notes?",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let's see. The user is asking about the topics covered in their machine learning course notes. Hmm. So first, I need to figure out which tool to use here. The options are web_search, doc_search, or direct_answer.\n\nThe user mentions \"my machine learning course notes\". That implies that the course notes are something they've uploaded or have access to. Since the system is an agentic RAG setup, the doc_search tool is for queries about the user's own uploaded documents. So if the user is asking about their own notes, then doc_search would be the right choice. \n\nWeb_search is for current, real-time info, but the user isn't asking for live data here. They want to know what's in their own notes. Direct_answer is for general knowledge without retrieval. But since this is about their specific course notes, which are probably stored in their documents, the answer has to come from the doc_search tool. \n\nSo the route should be doc_search.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "Find the section in my document about vector databases.",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let's see. The user wants to find the section in their document about vector databases. Hmm, first I need to figure out which tool to use here.\n\nThe options are web_search, doc_search, or direct_answer. The key here is that the user mentioned \"my document\", so they're referring to their own uploaded documents or notes. That means the information they need is in their documents, not the internet. So web_search is for current real-time info, which this isn't. Direct_answer would be if it's something I know without looking up. But vector databases are a specific topic that might be in their docs. Since they said \"my document\", it's doc_search. Let me double-check. Yes, doc_search is for user's own docs. So the answer should be doc_search.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "What did I write about chunking strategy in my notes?",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let's see. The user is asking, \"What did I write about chunking strategy in my notes?\" So I need to figure out which tool to route this query to.\n\nFirst, the options are web_search, doc_search, or direct_answer. The user is specifically asking about their own notes. The key phrase here is \"my notes\". That means they're referring to the documents or notes they've uploaded. The doc_search tool is for queries about the user's own uploaded documents. \n\nThe web_search is for current, real-time info that changes frequently. But the user isn't asking for the latest info; they want what they wrote in their notes. So web_search probably isn't the right choice here.\n\nDirect_answer is when the query can be answered without retrieval. But in this case, the user is asking about their own notes, which would require retrieving the documents they've uploaded. So direct_answer doesn't apply here.\n\nTherefore, the correct tool here is doc_search because the query is about the user's uploaded documents/notes. The answer should be in JSON format as specified.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "What are the key takeaways from the PDF I added to the knowledge base?",
+        "expected": "doc_search",
+        "raw_llm_output": "We are given a user query: \"What are the key takeaways from the PDF I added to the knowledge base?\"\n\nThe user is asking about the key takeaways from a PDF that they have added to their knowledge base (i.e., their own uploaded documents/notes).\n\nTherefore, we should route this query to the \"doc_search\" tool because:\n- The query is about the user's own uploaded documents (the PDF they added).\n- The tool \"doc_search\" is designed for queries about the user's own documents.\n\nWe do not need to do a web search because the information is in the user's own knowledge base (the PDF they added). \nWe also do not need general knowledge because the key takeaways are from a specific document they have provided.\n\nSo the route is \"doc_search\".\n\nResponse must be a JSON object in exactly the format: {\"route\": \"doc_search\"}\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "Does my document mention anything about persistent memory design?",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let's see. The user is asking if their document mentions anything about persistent memory design.\n\nFirst, I need to figure out which tool to use here. The options are web_search, doc_search, or direct_answer.\n\nThe key here is that the user is asking about their own uploaded documents. The question is specifically about what's in their document. So, this isn't about current web information or general knowledge. They want to know if their document has that information.\n\nWeb search would be for real-time data, but since they're asking about their own docs, that's probably not needed. Direct answer would be if I can answer without looking anything up, but persistent memory design is a technical topic that might require checking their documents. \n\nWait, the system is an agentic RAG, so doc_search is for the user's uploaded documents. So the correct route here is doc_search because the user is checking their own documents for specific content.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      }
+    ]
+  },
+  "adversarial": {
+    "total_queries": 17,
+    "parse_failures": 6,
+    "parse_failure_rate_pct": 35.3,
+    "fallback_recovery_rate_pct": 0.0,
+    "llm_only_accuracy_pct": 64.7,
+    "overall_accuracy_pct": 64.7,
+    "results": [
+      {
+        "query": "Has SpaceX launched Starship again?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"Has SpaceX launched Starship again?\"\n\nWe need to decide which tool to route this query to.\n\nLet's break down:\n\n- \"web_search\": for current, real-time, or frequently changing information.\n- \"doc_search\": for the user's own uploaded documents/notes (which we don't have context for in this query).\n- \"direct_answer\": if the query can be answered from general knowledge without retrieval.\n\nThe query asks about the most recent launch of SpaceX's Starship. \n\nAs of my knowledge cutoff (2023-10), I know that SpaceX has launched Starship multiple times, but the question is \"again\" meaning a second time? However, the key point is that the launch status is time-sensitive and changes frequently.\n\nImportant: The user is asking about the most recent event. Since the launch of Starship (the vehicle) is a current event that happens in real-time, and the answer might have changed since the last time I was updated, we need the latest information.\n\nGiven that:\n- The query is about a recent event (has SpaceX launched Star: again?).\n- The answer is not fixed and requires the latest news.\n\nTherefore, we should use \"web_search\" to get the current status.\n\nAlso, note that the user did not provide any documents (so no doc_search). And we don't have general knowledge that is up-to-date enough for this specific question (because the launch status is time-sensitive and I don't have real-time data).\n\nSo the route should be: \"web_search\"\n\nLet's check the options:\n\n- web_search: the query needs current, real-time, or frequently changing information -> yes, because launch events happen and the answer changes over time.\n- doc_search: the user hasn't provided any documents, and the query is about a general external event (not their own notes).\n- direct_answer: we cannot answer this from general knowledge without checking the latest news (",
+        "llm_parsed_ok": false,
+        "used_fallback": true,
+        "final_route": "direct_answer",
+        "correct": false
+      },
+      {
+        "query": "Is Bitcoin trading above $100,000?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"Is Bitcoin trading above $100,000?\"\n\nWe need to decide which tool to route this query to.\n\nLet's analyze:\n\n- The query asks about the current trading price of Bitcoin. This is a real-time, frequently changing piece of information that we don't have in our own documents (unless the user has uploaded specific Bitcoin trading data, but the query doesn't indicate that). \n- Since the user is asking for current market data, we need the latest price. This is not something we can answer from general knowledge (as the price fluctuates and we don't have a fixed number) and the user hasn't provided any documents that we should search (the query doesn't mention any uploaded documents).\n\nTherefore, we should use the \"web_search\" tool to get the current Bitcoin price from a reliable source.\n\nThe options are:\n- \"web_search\": for current, real-time, or frequently changing information\n- \"doc_search\": for the user's own uploaded documents/notes (but the query doesn't indicate the user has relevant documents, and the question is about current market data)\n- \"direct_answer\": for queries that can be answered from general knowledge (but the price of Bitcoin is not a fixed fact and we don't have it in our general knowledge)\n\nSo, the route is \"web_search\".\n\nWe must output ONLY a JSON object in the specified format.\n\nResponse: {\"route\": \"web_search\"}\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "Did India win their series decider against Australia?",
+        "expected": "web_search",
+        "raw_llm_output": "Okay, let's see. The user is asking if India won their series decider against Australia. Hmm, I need to figure out which tool to route this query to.\n\nFirst, I should think about what kind of information this requires. The question is about a recent cricket series between India and Australia. Since it's a series decider, that's a specific match outcome. Now, cricket results can change quickly, especially if it's a recent series. But wait, the user is asking about their series decider. I need to check if this information is up-to-date.\n\nWait, the tools available are web_search, doc_search, or direct_answer. Direct answer would be if I know the answer from general knowledge. But I don't have real-time data. As an AI, my knowledge is up to 2023, but I'm not sure about the latest cricket matches. Wait, the current date is 2023? Wait, no, the user might be asking in the present. Wait, but the problem says \"current, real-time, or frequently changing information\" for web_search.\n\nWait, the user is asking if India won their series decider against Australia. Let me think. In recent times, the India vs Australia series might have been in 2023. For example, in 2023, there was a series in Australia where India played. Wait, but maybe the latest series was in 2023. However, the problem is that I don't have real-time data. But the tool choice is based on whether the query needs current info.\n\nThe key here is that the user is asking about a recent event. If the answer requires the latest result, then it's web_search. Because the result of a series decider would be current and might change if there's a recent match. But maybe in the context of this problem, the answer is known to the system.\n\nWait, but the problem",
+        "llm_parsed_ok": false,
+        "used_fallback": true,
+        "final_route": "direct_answer",
+        "correct": false
+      },
+      {
+        "query": "Which version of PyTorch just came out?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"Which version of PyTorch just came out?\"\n\nWe need to decide which tool to route this query to.\n\nLet's analyze:\n\n- The query asks about the latest version of PyTorch. This is a real-time information that changes frequently (new versions are released regularly). \n- The current version of PyTorch can be found on the official website, GitHub, or by checking the PyTorch release notes. Since the user is asking for the \"just came out\" version, it's the most recent release which is time-sensitive.\n\nTherefore, we need current, real-time information. \n\nThe tools:\n- \"web_search\": for current, real-time, or frequently changing information.\n- \"doc_search\": for the user's own uploaded documents (which we don't have in this context, and the query isn't about the user's documents).\n- \"direct_answer\": if it can be answered from general knowledge without retrieval. But note: the latest version of PyTorch is not something that is fixed in general knowledge (it changes). For example, as of my last update, it was 1.13, but the latest might be 2.0 or something else. We don't have that knowledge without checking.\n\nHowever, note: the problem says \"direct_answer\" is for queries that can be answered from general knowledge, no retrieval needed. But the latest PyTorch version is not a fact that we have in our general knowledge (it's time-sensitive and changes). So we cannot use direct_answer.\n\nThus, we should use \"web_search\".\n\nBut let me double-check: Is there a possibility that the user's own documents (doc_search) might have this information? The query doesn't specify that the user has uploaded documents about PyTorch versions. The problem states: \"the query is about the user's own uploaded documents/notes\". Since the user hasn't provided any context about having uploaded documents, and",
+        "llm_parsed_ok": false,
+        "used_fallback": true,
+        "final_route": "direct_answer",
+        "correct": false
+      },
+      {
+        "query": "Is the RBI planning to cut interest rates?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"Is the RBI planning to cut interest rates?\"\n\nWe need to decide which tool to route this query to.\n\nLet's break down:\n\n- \"web_search\": for current, real-time, or frequently changing information.\n- \"doc_search\": for the user's own uploaded documents/notes.\n- \"direct_answer\": if the query can be answered from general knowledge without retrieval.\n\nThe query is about the RBI (Reserve Bank of India) planning to cut interest rates. \n\nThis is a current financial market topic. Interest rate decisions by central banks are real-time and frequently updated. The RBI's announcements and market expectations are typically found on financial news websites, government portals, or economic reports. \n\nSince the user is asking about current planning (i.e., what the RBI is planning to do in the near future), this requires up-to-date information that is not static. Therefore, we need to do a web search to get the latest news, announcements, or market expectations.\n\nThe user does not mention any specific uploaded documents (like their own notes about RBI), so we don't use doc_search.\n\nThis query cannot be answered by general knowledge alone because the RBI's interest rate decisions are specific to the Indian financial context and are subject to current economic conditions and market dynamics. General knowledge might tell us that the RBI does set interest rates, but the specific plan for cutting (if any) is recent and time-sensitive.\n\nTherefore, we route to \"web_search\".\n\nResponse must be a JSON object with key \"route\" and one of the three values.\n\nSo the response should be: {\"route\": \"web_search\"}\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "Has the government announced new AI rules in India?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"Has the government announced new AI rules in India?\"\n\nWe need to decide which tool to route this query to.\n\nLet's analyze:\n\n- The query is about whether the government of India has announced new AI rules. This is a factual question that requires up-to-date information because government announcements can change over time and new rules might be announced recently.\n\n- Since the user is asking about current government announcements, we need real-time information. The \"web_search\" tool is designed for queries that need current, real-time, or frequently changing information.\n\n- The \"doc_search\" tool is for the user's own uploaded documents. The user hasn't provided any documents in this context, and the query is about government announcements (which are typically public information, not the user's own documents).\n\n- The \"direct_answer\" tool is for queries that can be answered from general knowledge without retrieval. However, the specific announcement of new AI rules by the Indian government is likely a recent event that might not be in general knowledge (as it's a current event) and would require checking the latest news.\n\nGiven that the query is about a current government announcement in India, it is very likely that the answer is not in general knowledge and requires a web search for the latest news.\n\nTherefore, we route to \"web_search\".\n\nResponse must be a JSON object exactly in the format: {\"route\": \"web_search\"}\n\nNote: The instruction says \"Respond with ONLY a JSON object in exactly this format, and nothing else\"\n\nSo, we output:\n{\"route\": \"web:web_search\"}\n\nWait, let me check: the string for the tool is \"web_search\", so it should be:\n\n{\"route\": \"web_search\"}\n\nBut note: the problem says the tool names are: \"web_search\", \"doc_search\", \"direct_answer\"\n\nSo, the correct JSON is:\n\n{\"route\": \"web_search\"}\n\nI will output that.\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "Which repositories are trending on GitHub?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"Which repositories are trending on GitHub?\"\n We need to decide which tool to route this query to.\n\n Let's analyze:\n - The query asks for \"trending repositories on GitHub\". This information is time-sensitive and changes frequently (e.g., daily trends). \n - GitHub's trending repositories are typically updated in real-time or at regular intervals, and the current trends would require fetching from the web (since GitHub's API or their website provides this information).\n\n Therefore, this query requires current, real-time information that is not stored in the user's own documents (unless the user has uploaded specific GitHub trends documents, but the query doesn't indicate that). \n\n The options:\n   - \"web_search\": for current, real-time, or frequently changing information.\n   - \"doc_search\": for the user's own uploaded documents (which we don't have any context for in this query).\n   - \"direct_answer\": if we can answer without retrieval (but we don't have general knowledge of the current trending GitHub repos without checking).\n\n Since the user is asking for the current trending repositories, we cannot answer from general knowledge (because the trend changes every day and we don't have a fixed list). We must do a web search to get the latest information.\n\n Thus, we route to \"web_search\".\n\n Note: The instruction says to respond with ONLY a JSON object in exactly the format: {\"route\": \"web_search\" | \"doc_search\" | \"direct_answer\"}\n\n So the response should be: {\"route\": \"web_search\"}\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": false,
+        "used_fallback": true,
+        "final_route": "direct_answer",
+        "correct": false
+      },
+      {
+        "query": "Did NASA confirm a launch date for Artemis?",
+        "expected": "web_search",
+        "raw_llm_output": "We are given a user query: \"Did NASA confirm a launch date for Artemis?\"\n\nWe need to decide which tool to route to:\n\n- \"web_search\": for current, real-time, or frequently changing information\n- \"doc_search\": for the user's own uploaded documents/notes\n- \"direct_answer\": if the query can be answered from general knowledge without retrieval\n\nThe query asks about NASA confirming a launch date for Artemis. \n\nArtemis is a NASA program (a series of missions to the Moon). Launch dates for such programs are typically current and real-time information. NASA does not have a fixed launch date that is static (it might change) and the user is asking for the most recent confirmation.\n\nSince this is a current event and the answer would require checking the latest NASA announcements (which change over time), we need web search.\n\nAlso, note that the user is not referring to their own documents (they didn't upload any in this context) so it's not doc_search.\n\nWe don't have general knowledge that we can answer without checking: we know that NASA has planned several Artemis missions, but the exact launch date for the first Artemis mission (Artemis III) has been subject to change. As of my last knowledge update (which is not current), the launch was planned for 2026 but it might have changed. However, the user is asking for the most recent confirmation, so we must do a web search to get the latest.\n\nTherefore, we route to \"web_search\".\n\nSo the response should be: {\"route\": \"web_search\"}\n</think>\n\n{\"route\": \"web_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "web_search",
+        "correct": true
+      },
+      {
+        "query": "Can you check what I wrote about vector databases?",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let's see. The user is asking, \"Can you check what I wrote about vector databases?\" Hmm. So they want me to look at what they wrote before. Since the user mentioned \"what I wrote,\" that probably refers to their own uploaded documents or notes. In an agentic RAG system, the doc_search tool is for queries about the user's own documents. Web_search would be for current real-time info, but here they're checking their own past writings. So this should be doc_search. Let me make sure. If they were asking about the latest trends in vector databases, that would be web_search, but they specifically said \"what I wrote,\" so it's their own documents. Yep, doc_search is the right choice here.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "What have I covered so far in my machine learning coursework?",
+        "expected": "doc_search",
+        "raw_llm_output": "We are given a user query: \"What have I covered so far in my machine learning coursework?\"\n\nWe need to decide which tool to route this query to.\n\nLet's break down:\n\n- The query is asking about what the user has covered in their machine learning coursework. This is about the user's own learning progress.\n\nIn an agentic RAG system, the \"doc_search\" tool is for queries about the user's own uploaded documents/notes. Since the user is asking about their own coursework (which they likely have uploaded as notes or documents), we would use doc_search.\n\nHowever, note that the user might not have uploaded any documents about their coursework? But the problem states: \"the query is about the user's own uploaded documents/notes\". The key here is that the user is asking about what they have covered, which implies they have previously uploaded their notes or coursework materials.\n\nBut wait: the query does not specify that the user has uploaded anything. However, in the context of an agentic RAG system, we assume that the system has access to the user's uploaded documents. The problem says: \"the query is about the user's own uploaded documents/notes\". Since the user is asking about their own coursework, it's reasonable to assume that they have uploaded their notes.\n\nAlternatively, if the user hasn't uploaded anything, then we might use direct_answer? But the problem states that the system is agentic and we are to decide based on the query.\n\nLet me re-read the problem:\n\n- \"doc_search\": the query is about the user's own uploaded documents/\": meaning the query is about the user's own documents that they have uploaded.\n\nThe user is asking about what they have covered in their coursework. This is a personal record that they would have uploaded (if they have been using the system). Since the system is agentic and RAG, it's common to have the user's documents.\n\nBut note: the problem says \"the query is about",
+        "llm_parsed_ok": false,
+        "used_fallback": true,
+        "final_route": "direct_answer",
+        "correct": false
+      },
+      {
+        "query": "Pull up what I said earlier about chunking strategy.",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let's see. The user is asking to \"Pull up what I said earlier about chunking strategy.\" Hmm, so they want to recall something they mentioned before. But in the context of an agentic RAG system, I need to figure out which tool to route this query to.\n\nFirst, the tools available are web_search, doc_search, and direct_answer. \n\nThe user says \"what I said earlier\". That implies they're referring to previous messages or notes they've uploaded. Since the system is RAG, the \"doc_search\" tool is for the user's own uploaded documents or notes. If they mentioned chunking strategy earlier, it's probably in their own notes or documents. \n\nWeb_search would be for current, real-time info, but the user is asking about something they previously said, so that's not current data. Direct_answer is for general knowledge without retrieval. But here, the user is asking for their own past input, so it's not general knowledge. \n\nSo, the correct tool here is doc_search because it's about their uploaded documents where they might have written about chunking strategy earlier. The user isn't asking for real-time info or general knowledge, so it's doc_search.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "What are the main findings in the file I gave you?",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let's see. The user is asking about the main findings in the file they gave me. Hmm. So first, I need to figure out which tool to route this query to.\n\nThe options are web_search, doc_search, or direct_answer. \n\nThe key here is that the user mentions \"the file I gave you\". That means they have uploaded a document or file before. In an agentic RAG system, doc_search is used for queries about the user's own uploaded documents. Since the user is referring to a file they provided, this should be handled by doc_search.\n\nWeb_search is for real-time or frequently changing info, but the user isn't asking for current data here. They want the findings from their own file. Direct_answer is when the answer is from general knowledge, but here it's specific to their uploaded document.\n\nSo the correct route here is doc_search.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "Summarize the second section of that research draft I shared.",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let's see. The user wants me to summarize the second section of a research draft they shared. Hmm, first I need to figure out what kind of tool to route this query to.\n\nThe options are web_search, doc_search, or direct_answer. The user mentioned \"that research draft I shared\". So they must have uploaded a document before. In an agentic RAG system, doc_search is for queries about the user's own uploaded documents. Since they refer to a draft they shared, that's probably their own document.\n\nWeb_search would be for current, real-time info, but the user is asking about a specific section of their own draft, which they've already uploaded. So it's not needing external data. Direct_answer is for general knowledge without retrieval. But here, the answer depends on the content of their uploaded document. So the correct tool here should be doc_search.\n\nWait, the user says \"the second section of that research draft I shared\". So they have already shared the draft, meaning it's in their own documents. Therefore, the system should use doc_search to retrieve that section from the user's uploaded docs. So the route is doc_search.\n</think>\n\n{\"route\": \"doc_search\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "doc_search",
+        "correct": true
+      },
+      {
+        "query": "What does the report say about evaluation methodology?",
+        "expected": "doc_search",
+        "raw_llm_output": "Okay, let me try to figure out what the user is asking here. The question is, \"What does the report say about evaluation methodology?\" \n\nFirst, I need to determine which tool to route this query to. The options are web_search, doc_search, or direct_answer.\n\nHmm. The user is asking about a report's evaluation methodology. Now, the key here is whether this report is something the user has uploaded or if it's a general knowledge question.\n\nSince the user is asking about a specific report, it's likely that they have uploaded documents that include this report. In an agentic RAG system, \"doc_search\" is used for queries about the user's own uploaded documents. So if the user has a report they uploaded, then the answer would be in their documents.\n\nBut wait, the problem says \"the report\" \u2014 but without knowing which report, but in the context of RAG systems, when a user asks about a report they've uploaded, the system uses doc_search. The query here is about what the report says, implying the user has a specific report in their docs.\n\nOn the other hand, if it's a general knowledge question about evaluation methodologies in a specific field, then it would be direct_answer. But the phrasing \"the report says\" suggests that the report is a specific document the user has.\n\nSo, the answer here is doc_search. Let me check the options again.\n\nThe tools:\n- web_search: current, real-time, frequently changing info. The evaluation methodology in a report might not be time-sensitive unless it's something like stock prices or news. But the user is asking about a report they have, so probably not web_search.\n- doc_search: user's own documents. Since they're asking about a report, it's likely they have it uploaded.\n- direct_answer: if it's general knowledge. But the question is about what the report says, so it's not general knowledge.\n\nTherefore, the correct route is",
+        "llm_parsed_ok": false,
+        "used_fallback": true,
+        "final_route": "direct_answer",
+        "correct": false
+      },
+      {
+        "query": "Explain how gradient descent works.",
+        "expected": "direct_answer",
+        "raw_llm_output": "Okay, let's see. The user wants me to explain how gradient descent works. Hmm, first I need to figure out which tool to route this query to.\n\nGradient descent is a concept from machine learning and optimization. I remember that it's an algorithm used to minimize a function by iteratively moving in the direction of steepest descent. But does the user need real-time data here? Like, current information? Probably not. Gradient descent is a standard algorithm taught in ML courses, so it's part of general knowledge.\n\nWait, the options are web_search, doc_search, or direct_answer. Doc_search is for the user's own documents. But the user didn't mention uploading any documents here. So it's not doc_search. Web_search would be if the query needs current data, like the latest trends or something. But explaining gradient descent is a fundamental concept that's well-established. So maybe it's direct_answer.\n\nLet me double-check. If the user is asking for a basic explanation, like in an educational context, then the answer can be derived from general knowledge without needing to search the web or specific documents. So the correct route here should be direct_answer. Yeah, that makes sense. I don't think they need to search the web for this explanation because it's a standard topic. So the response should be {\"route\": \"direct_answer\"}.\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      },
+      {
+        "query": "What's the difference between L1 and L2 regularization?",
+        "expected": "direct_answer",
+        "raw_llm_output": "Okay, let me try to figure out what the user is asking here. They want to know the difference between L1 and L2 regularization. Hmm, I remember that regularization is a technique used in machine learning to prevent overfitting. L1 and L2 are two common types.\n\nFirst, L1 regularization, also known as Lasso regression, adds a penalty equal to the absolute value of the coefficients. This tends to shrink some coefficients to zero, which can lead to sparse models. L2 regularization, or Ridge regression, adds a penalty equal to the square of the coefficients. This shrinks the coefficients but doesn't set them to zero, so the model remains dense.\n\nWait, the user is asking for the difference. Since this is a concept in machine learning that's part of general knowledge, I don't think they need to search the web or their documents. They might be a student or someone learning about machine learning. The answer is something that's covered in standard ML courses, so it's within general knowledge.\n\nLet me check if there's any chance they need to look up specific recent information. But regularization techniques have been well-established for a while, so current real-time info isn't needed here. Also, the user didn't mention any specific documents they uploaded, so it's not doc_search. Therefore, the answer should be direct_answer.\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      },
+      {
+        "query": "How does a hash table achieve constant-time lookup?",
+        "expected": "direct_answer",
+        "raw_llm_output": "Okay, let's see. The user is asking how a hash table achieves constant-time lookup. Hmm. I need to figure out which tool to route this query to.\n\nFirst, I should recall what a hash table is. From what I remember, hash tables use a hash function to map keys to indices in an array, allowing for average-case O(1) time complexity for lookups. But the user is asking about the mechanism behind that constant time.\n\nNow, the options are web_search, doc_search, or direct_answer. Let me think. If this is a standard computer science concept that's covered in general knowledge, then maybe I can answer it without needing external data. But wait, sometimes details might require specific knowledge.\n\nWait, the user is probably expecting an explanation of the hash function, collision handling, etc. But does that require current real-time info? Like, if there's a new paper or something? Probably not. The concept of hash tables has been around for a long time, so it's part of general knowledge.\n\nWait, but maybe the user has uploaded some documents related to this. But the problem states that the user hasn't specified any documents. The query here is a general question. So if it's a standard answer that doesn't need retrieval from documents or web, then it's direct_answer.\n\nLet me check. For example, in computer science textbooks, hash tables are explained with hash functions, separate chaining, open addressing, etc. The average case is O(1) because the hash function distributes keys uniformly. So the answer is a standard concept that doesn't require current web data or specific documents. Therefore, the route should be direct_answer.\n\nWait, but sometimes people confuse hash tables with other data structures. But the question is straightforward. The answer is part of general knowledge. So I think direct_answer is correct here.\n</think>\n\n{\"route\": \"direct_answer\"}",
+        "llm_parsed_ok": true,
+        "used_fallback": false,
+        "final_route": "direct_answer",
+        "correct": true
+      }
+    ]
+  },
+  "combined": {
+    "total_queries": 41,
+    "parse_failures": 6,
+    "parse_failure_rate_pct": 14.6,
+    "fallback_recovery_rate_pct": 0.0,
+    "llm_only_accuracy_pct": 85.4,
+    "overall_accuracy_pct": 85.4
+  }
+}
